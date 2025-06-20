@@ -1,6 +1,6 @@
 export interface Slide {
   id: number;
-  type: 'title' | 'content' | 'timeline' | 'emoji' | 'bullets' | 'diagram' | 'quote' | 'visual';
+  type: 'title' | 'content' | 'timeline' | 'emoji' | 'bullets' | 'diagram' | 'quote' | 'visual' | 'how-did-we-get-here';
   title?: string;
   subtitle?: string;
   content?: string;
@@ -90,33 +90,8 @@ export const slides: Slide[] = [
   },
   {
     id: 11,
-    type: 'diagram',
-    title: 'So how do we get here?',
-    diagram: {
-      type: 'concentric',
-      items: [
-        {
-          name: 'Artificial Intelligence',
-          description: 'The broad field of creating intelligent machines',
-          level: 0
-        },
-        {
-          name: 'Machine Learning',
-          description: 'AI systems that learn from data without explicit programming',
-          level: 1
-        },
-        {
-          name: 'Deep Learning',
-          description: 'ML using neural networks with multiple layers',
-          level: 2
-        },
-        {
-          name: 'Generative AI',
-          description: 'AI that creates new content (text, images, code)',
-          level: 3
-        }
-      ]
-    }
+    type: 'how-did-we-get-here',
+    title: 'So how do we get here?'
   },
   {
     id: 12,

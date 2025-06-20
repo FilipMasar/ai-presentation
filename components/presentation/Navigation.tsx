@@ -24,7 +24,7 @@ export function Navigation({
       <motion.div
         initial={{ opacity: 0, x: -20 }}
         animate={{ opacity: 1, x: 0 }}
-        className="fixed left-8 top-1/2 transform -translate-y-1/2 z-30 space-y-4"
+        className="fixed left-8 bottom-8 transform -translate-y-1/2 z-30 space-y-4"
       >
         <button
           onClick={onPrevious}
