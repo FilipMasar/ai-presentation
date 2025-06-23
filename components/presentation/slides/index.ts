@@ -15,4 +15,7 @@ export { DiagramSlide } from './DiagramSlide';
 export { InteractiveSlide } from './InteractiveSlide';
 
 // Custom slide for "How did we get here?" with nested bottom diagram
-export { HowDidWeGetHereSlide } from './HowDidWeGetHereSlide'; 
+export { HowDidWeGetHereSlide } from './HowDidWeGetHereSlide';
+export { PerceptronSlide } from './PerceptronSlide';
+export { NeuralNetworkSlide } from './NeuralNetworkSlide';
+export { TransformerSlide } from './TransformerSlide'; 

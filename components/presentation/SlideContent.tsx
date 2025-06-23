@@ -10,7 +10,10 @@ import {
   TimelineSlide,
   VisualSlide,
   DiagramSlide,
-  HowDidWeGetHereSlide
+  HowDidWeGetHereSlide,
+  PerceptronSlide,
+  NeuralNetworkSlide,
+  TransformerSlide
 } from './slides/';
 
 interface SlideContentProps {
@@ -51,6 +54,15 @@ export function SlideContent({ slide, isActive }: SlideContentProps) {
     
     case 'how-did-we-get-here':
       return <HowDidWeGetHereSlide slide={slide} />;
+    
+    case 'perceptron':
+      return <PerceptronSlide slide={slide} />;
+    
+    case 'neural-network':
+      return <NeuralNetworkSlide slide={slide} />;
+    
+    case 'transformer':
+      return <TransformerSlide slide={slide} />;
     
     default:
       console.warn('Unknown slide type:', slide.type);

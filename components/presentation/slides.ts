@@ -1,6 +1,6 @@
 export interface Slide {
   id: number;
-  type: 'title' | 'content' | 'timeline' | 'emoji' | 'bullets' | 'diagram' | 'quote' | 'visual' | 'how-did-we-get-here';
+  type: 'title' | 'content' | 'timeline' | 'emoji' | 'bullets' | 'diagram' | 'quote' | 'visual' | 'how-did-we-get-here' | 'perceptron' | 'neural-network' | 'transformer';
   title?: string;
   subtitle?: string;
   content?: string;
@@ -140,14 +140,15 @@ export const slides: Slide[] = [
   },
   {
     id: 16,
-    type: 'content',
-    title: 'Neural Networks',
-    subtitle: 'Perceptron (1957)'
+    type: 'perceptron',
+    title: 'The Perceptron',
+    subtitle: '1957'
   },
   {
     id: 17,
-    type: 'title',
-    title: 'Neural Network Image'
+    type: 'neural-network',
+    title: 'Neural Networks',
+    subtitle: 'Multiple Perceptrons Working Together'
   },
   {
     id: 18,
@@ -160,14 +161,14 @@ export const slides: Slide[] = [
     type: 'bullets',
     title: 'Deep Learning',
     bullets: [
-      'Input sentence → 0, 1 (sentiment)',
+      'Reviews → 0, 1 (sentiment)',
       'Image → cat or dog',
-      'Sentence → predict next word'
+      'Text → predict next word'
     ]
   },
   {
     id: 20,
-    type: 'content',
+    type: 'transformer',
     title: '2017: Transformers',
     subtitle: '"Attention is All You Need"'
   },
@@ -202,7 +203,7 @@ export const slides: Slide[] = [
   {
     id: 25,
     type: 'content',
-    title: 'Obviously this can\'t be everything',
+    title: 'Obviously this can\'t be everything to chatGPT',
     subtitle: 'Back to timeline...'
   },
   {
