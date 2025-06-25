@@ -18,4 +18,5 @@ export { InteractiveSlide } from './InteractiveSlide';
 export { HowDidWeGetHereSlide } from './HowDidWeGetHereSlide';
 export { PerceptronSlide } from './PerceptronSlide';
 export { NeuralNetworkSlide } from './NeuralNetworkSlide';
-export { TransformerSlide } from './TransformerSlide'; 
+export { TransformerSlide } from './TransformerSlide';
+export { FinalSlide } from './FinalSlide';
