@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import QRCode from 'react-qr-code';
 import { SlideWrapper, textVariants } from './SlideWrapper';
 import { Slide } from '../slides';
 
@@ -9,38 +10,38 @@ interface VideoSlideProps {
 }
 
 export function VideoSlide({ slide }: VideoSlideProps) {
-  const qrSrc = slide.qrUrl
-    ? `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${encodeURIComponent(slide.qrUrl)}`
-    : undefined;
-
   return (
     <SlideWrapper slideId={slide.id}>
-      <div className="space-y-8 flex flex-col items-center">
-        {slide.title && (
-          <motion.h2
+      <div className="flex items-center justify-center gap-12 h-full w-full">
+        {/* Videos on the left */}
+        {slide.videoUrls && slide.videoUrls.length > 0 && (
+          <div className="flex-1 grid grid-cols-1 gap-8 max-w-4xl">
+            {slide.videoUrls.map((video, index) => (
+              <motion.iframe
+                key={index}
+                variants={textVariants}
+                className="w-full aspect-video rounded-lg shadow-lg"
+                src={video.url}
+                title={video.title ?? `video ${index + 1}`}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            ))}
+          </div>
+        )}
+
+        {/* QR Code on the right */}
+        {slide.qrUrls && slide.qrUrls.length > 0 && (
+          <motion.div
             variants={textVariants}
-            className="text-6xl font-bold gradient-text leading-tight text-center"
+            className="p-8 bg-white rounded-lg shadow-lg"
           >
-            {slide.title}
-          </motion.h2>
-        )}
-        {slide.videoUrl && (
-          <motion.iframe
-            variants={textVariants}
-            className="w-full max-w-3xl aspect-video rounded-lg"
-            src={slide.videoUrl}
-            title={slide.title ?? 'video'}
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          />
-        )}
-        {qrSrc && (
-          <motion.img
-            variants={textVariants}
-            src={qrSrc}
-            alt="QR code"
-            className="w-32 h-32"
-          />
+            <QRCode
+              value={slide.qrUrls[0]}
+              size={200}
+              style={{ height: "auto", maxWidth: "100%", width: "100%" }}
+            />
+          </motion.div>
         )}
       </div>
     </SlideWrapper>

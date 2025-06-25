@@ -12,8 +12,8 @@ export interface Slide {
   quote?: string;
   author?: string;
   visual?: string;
-  videoUrl?: string;
-  qrUrl?: string;
+  videoUrls?: Array<{ url: string; title?: string }>;
+  qrUrls?: string[];
   diagram?: {
     type: 'hierarchy' | 'flow' | 'nested' | 'concentric';
     items: Array<{
@@ -285,9 +285,19 @@ export const slides: Slide[] = [
   {
     id: 37,
     type: 'video',
-    title: 'Watch this demo',
-    videoUrl: 'https://www.youtube.com/embed/7xTGNNLPyMI?si=bLdR6gD8M-xc49_a',
-    qrUrl: 'https://youtu.be/7xTGNNLPyMI?si=bLdR6gD8M-xc49_a'
+    videoUrls: [
+      {
+        url: 'https://www.youtube.com/embed/7xTGNNLPyMI?si=bLdR6gD8M-xc49_a',
+        title: 'Demo 1'
+      },
+      {
+        url: 'https://www.youtube.com/embed/EWvNQjAaOHw?si=nZr7irPLrspL-wLM',
+        title: 'Demo 2'
+      }
+    ],
+    qrUrls: [
+      'https://www.youtube.com/@AndrejKarpathy'
+    ]
   },
   {
     id: 38,
