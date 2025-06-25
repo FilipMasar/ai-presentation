@@ -1,6 +1,21 @@
 export interface Slide {
   id: number;
-  type: 'title' | 'content' | 'timeline' | 'emoji' | 'bullets' | 'diagram' | 'quote' | 'visual' | 'video' | 'how-did-we-get-here' | 'perceptron' | 'neural-network' | 'transformer' | 'final';
+  type:
+    | 'title'
+    | 'content'
+    | 'timeline'
+    | 'emoji'
+    | 'bullets'
+    | 'diagram'
+    | 'quote'
+    | 'visual'
+    | 'video'
+    | 'pipeline'
+    | 'how-did-we-get-here'
+    | 'perceptron'
+    | 'neural-network'
+    | 'transformer'
+    | 'final';
   title?: string;
   subtitle?: string;
   content?: string;
@@ -23,6 +38,10 @@ export interface Slide {
       children?: string[];
     }>;
   };
+  pipeline?: Array<{
+    label: string;
+    emoji?: string;
+  }>;
 }
 
 export const slides: Slide[] = [
@@ -204,17 +223,58 @@ export const slides: Slide[] = [
   },
   {
     id: 25,
+    type: 'bullets',
+    title: 'Pretraining',
+    bullets: [
+      'Massive web-scale corpus',
+      'Self-supervised next-token prediction',
+      'Base model emerges'
+    ]
+  },
+  {
+    id: 26,
+    type: 'bullets',
+    title: 'Supervised Fine Tuning',
+    bullets: [
+      'Curated question/answer pairs',
+      'Model learns to follow instructions',
+      'Produces an SFT model'
+    ]
+  },
+  {
+    id: 27,
+    type: 'bullets',
+    title: 'RLHF',
+    bullets: [
+      'Humans rank model outputs',
+      'Train reward model on preferences',
+      'Optimize with reinforcement learning'
+    ]
+  },
+  {
+    id: 28,
+    type: 'pipeline',
+    title: 'Training Pipeline',
+    pipeline: [
+      { label: 'Pretraining', emoji: '📚' },
+      { label: 'SFT', emoji: '🛠️' },
+      { label: 'RLHF', emoji: '👍' },
+      { label: 'ChatGPT', emoji: '🤖' }
+    ]
+  },
+  {
+    id: 29,
     type: 'content',
     title: 'Obviously this can\'t be everything to chatGPT',
     subtitle: 'Back to timeline...'
   },
   {
-    id: 26,
+    id: 30,
     type: 'title',
     title: 'GPT-2'
   },
   {
-    id: 27,
+    id: 31,
     type: 'bullets',
     title: 'Prompt Engineering',
     bullets: [
@@ -223,7 +283,7 @@ export const slides: Slide[] = [
     ]
   },
   {
-    id: 28,
+    id: 32,
     type: 'bullets',
     title: 'Reasoning Strategies',
     bullets: [
@@ -232,7 +292,7 @@ export const slides: Slide[] = [
     ]
   },
   {
-    id: 29,
+    id: 33,
     type: 'bullets',
     title: 'Tool Use & Augmentation',
     bullets: [
@@ -242,48 +302,48 @@ export const slides: Slide[] = [
     ]
   },
   {
-    id: 30,
+    id: 34,
     type: 'title',
     title: 'Now these are being baked into the model'
   },
   {
-    id: 31,
+    id: 35,
     type: 'content',
     title: 'What do we have?',
     subtitle: 'A tool that understands human language'
   },
   {
-    id: 32,
+    id: 36,
     type: 'content',
     title: 'Looks Like Magic ✨',
     subtitle: 'Underneath it predicts tokens'
   },
   {
-    id: 33,
+    id: 37,
     type: 'content',
     title: 'Reasoning & Tools',
     subtitle: 'Add superpowers to the model'
   },
   {
-    id: 34,
+    id: 38,
     type: 'content',
     title: 'Still a Black Box',
     subtitle: 'Interpretable AI tries to explain it'
   },
   {
-    id: 35,
+    id: 39,
     type: 'content',
     title: 'Hope this made things clearer',
     subtitle: "But it's fine if you don't care"
   },
   {
-    id: 36,
+    id: 40,
     type: 'content',
     title: "I don't really know how electricity works ⚡️",
     subtitle: 'And I use it every day'
   },
   {
-    id: 37,
+    id: 41,
     type: 'video',
     videoUrls: [
       {
@@ -300,7 +360,7 @@ export const slides: Slide[] = [
     ]
   },
   {
-    id: 38,
+    id: 42,
     type: 'final',
     title: 'Thank you!',
     subtitle: 'Questions?',

@@ -10,6 +10,7 @@ export { QuoteSlide } from './QuoteSlide';
 export { TimelineSlide } from './TimelineSlide';
 export { VisualSlide } from './VisualSlide';
 export { DiagramSlide } from './DiagramSlide';
+export { PipelineSlide } from './PipelineSlide';
 export { VideoSlide } from './VideoSlide';
 
 // Example of custom slide type (demonstrates extensibility)
