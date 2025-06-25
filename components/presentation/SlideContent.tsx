@@ -10,6 +10,7 @@ import {
   TimelineSlide,
   VisualSlide,
   DiagramSlide,
+  VideoSlide,
   HowDidWeGetHereSlide,
   PerceptronSlide,
   NeuralNetworkSlide,
@@ -52,6 +53,9 @@ export function SlideContent({ slide, isActive }: SlideContentProps) {
     
     case 'diagram':
       return <DiagramSlide slide={slide} />;
+
+    case 'video':
+      return <VideoSlide slide={slide} />;
     
     case 'how-did-we-get-here':
       return <HowDidWeGetHereSlide slide={slide} />;

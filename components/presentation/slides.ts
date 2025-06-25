@@ -1,6 +1,6 @@
 export interface Slide {
   id: number;
-  type: 'title' | 'content' | 'timeline' | 'emoji' | 'bullets' | 'diagram' | 'quote' | 'visual' | 'how-did-we-get-here' | 'perceptron' | 'neural-network' | 'transformer' | 'final';
+  type: 'title' | 'content' | 'timeline' | 'emoji' | 'bullets' | 'diagram' | 'quote' | 'visual' | 'video' | 'how-did-we-get-here' | 'perceptron' | 'neural-network' | 'transformer' | 'final';
   title?: string;
   subtitle?: string;
   content?: string;
@@ -12,6 +12,8 @@ export interface Slide {
   quote?: string;
   author?: string;
   visual?: string;
+  videoUrls?: Array<{ url: string; title?: string }>;
+  qrUrls?: string[];
   diagram?: {
     type: 'hierarchy' | 'flow' | 'nested' | 'concentric';
     items: Array<{
@@ -282,6 +284,23 @@ export const slides: Slide[] = [
   },
   {
     id: 37,
+    type: 'video',
+    videoUrls: [
+      {
+        url: 'https://www.youtube.com/embed/7xTGNNLPyMI?si=bLdR6gD8M-xc49_a',
+        title: 'Demo 1'
+      },
+      {
+        url: 'https://www.youtube.com/embed/EWvNQjAaOHw?si=nZr7irPLrspL-wLM',
+        title: 'Demo 2'
+      }
+    ],
+    qrUrls: [
+      'https://www.youtube.com/@AndrejKarpathy'
+    ]
+  },
+  {
+    id: 38,
     type: 'final',
     title: 'Thank you!',
     subtitle: 'Questions?',
