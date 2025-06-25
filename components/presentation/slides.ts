@@ -1,6 +1,6 @@
 export interface Slide {
   id: number;
-  type: 'title' | 'content' | 'timeline' | 'emoji' | 'bullets' | 'diagram' | 'quote' | 'visual' | 'how-did-we-get-here' | 'perceptron' | 'neural-network' | 'transformer' | 'final';
+  type: 'title' | 'content' | 'timeline' | 'emoji' | 'bullets' | 'diagram' | 'quote' | 'visual' | 'interactive' | 'how-did-we-get-here' | 'perceptron' | 'neural-network' | 'transformer' | 'final';
   title?: string;
   subtitle?: string;
   content?: string;
@@ -202,17 +202,27 @@ export const slides: Slide[] = [
   },
   {
     id: 25,
+    type: 'bullets',
+    title: 'LLM Training Pipeline',
+    bullets: [
+      'Pretraining on huge text datasets',
+      'Fine-tuning for specific tasks',
+      'Feedback loops (e.g. RLHF)'
+    ]
+  },
+  {
+    id: 26,
     type: 'content',
     title: 'Obviously this can\'t be everything to chatGPT',
     subtitle: 'Back to timeline...'
   },
   {
-    id: 26,
+    id: 27,
     type: 'title',
     title: 'GPT-2'
   },
   {
-    id: 27,
+    id: 28,
     type: 'bullets',
     title: 'Prompt Engineering',
     bullets: [
@@ -221,7 +231,7 @@ export const slides: Slide[] = [
     ]
   },
   {
-    id: 28,
+    id: 29,
     type: 'bullets',
     title: 'Reasoning Strategies',
     bullets: [
@@ -230,7 +240,7 @@ export const slides: Slide[] = [
     ]
   },
   {
-    id: 29,
+    id: 30,
     type: 'bullets',
     title: 'Tool Use & Augmentation',
     bullets: [
@@ -240,48 +250,64 @@ export const slides: Slide[] = [
     ]
   },
   {
-    id: 30,
+    id: 31,
     type: 'title',
     title: 'Now these are being baked into the model'
   },
   {
-    id: 31,
+    id: 32,
     type: 'content',
     title: 'What do we have?',
     subtitle: 'A tool that understands human language'
   },
   {
-    id: 32,
+    id: 33,
     type: 'content',
     title: 'Looks Like Magic ✨',
     subtitle: 'Underneath it predicts tokens'
   },
   {
-    id: 33,
+    id: 34,
     type: 'content',
     title: 'Reasoning & Tools',
     subtitle: 'Add superpowers to the model'
   },
   {
-    id: 34,
+    id: 35,
     type: 'content',
     title: 'Still a Black Box',
     subtitle: 'Interpretable AI tries to explain it'
   },
   {
-    id: 35,
+    id: 36,
+    type: 'interactive',
+    title: 'Quick check: what does LLM stand for?',
+    content: 'Large Language Model'
+  },
+  {
+    id: 37,
     type: 'content',
     title: 'Hope this made things clearer',
     subtitle: "But it's fine if you don't care"
   },
   {
-    id: 36,
+    id: 38,
     type: 'content',
     title: "I don't really know how electricity works ⚡️",
     subtitle: 'And I use it every day'
   },
   {
-    id: 37,
+    id: 39,
+    type: 'bullets',
+    title: 'Future Outlook',
+    bullets: [
+      'Multimodal and agentic systems',
+      'AI regulation & ethics debates',
+      'Real-world deployment challenges'
+    ]
+  },
+  {
+    id: 40,
     type: 'final',
     title: 'Thank you!',
     subtitle: 'Questions?',
