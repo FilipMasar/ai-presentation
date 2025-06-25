@@ -9,6 +9,7 @@ export interface Slide {
     | 'diagram'
     | 'quote'
     | 'visual'
+    | 'video'
     | 'pipeline'
     | 'how-did-we-get-here'
     | 'perceptron'
@@ -26,6 +27,8 @@ export interface Slide {
   quote?: string;
   author?: string;
   visual?: string;
+  videoUrls?: Array<{ url: string; title?: string }>;
+  qrUrls?: string[];
   diagram?: {
     type: 'hierarchy' | 'flow' | 'nested' | 'concentric';
     items: Array<{
@@ -341,6 +344,23 @@ export const slides: Slide[] = [
   },
   {
     id: 41,
+    type: 'video',
+    videoUrls: [
+      {
+        url: 'https://www.youtube.com/embed/7xTGNNLPyMI?si=bLdR6gD8M-xc49_a',
+        title: 'Demo 1'
+      },
+      {
+        url: 'https://www.youtube.com/embed/EWvNQjAaOHw?si=nZr7irPLrspL-wLM',
+        title: 'Demo 2'
+      }
+    ],
+    qrUrls: [
+      'https://www.youtube.com/@AndrejKarpathy'
+    ]
+  },
+  {
+    id: 42,
     type: 'final',
     title: 'Thank you!',
     subtitle: 'Questions?',
