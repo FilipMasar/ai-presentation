@@ -12,11 +12,11 @@ export function QuoteSlide({ slide }: QuoteSlideProps) {
   return (
     <SlideWrapper slideId={slide.id}>
       <div className="space-y-12 max-w-4xl">
-        <motion.blockquote 
+        <motion.blockquote
           variants={textVariants}
           className="text-5xl font-light text-white leading-relaxed italic"
         >
-          "{slide.quote}"
+          {slide.quote}
         </motion.blockquote>
         <motion.p 
           variants={textVariants}
