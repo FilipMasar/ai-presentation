@@ -213,67 +213,75 @@ export const slides: Slide[] = [
   },
   {
     id: 27,
-    type: 'title',
-    title: 'Prompt Engineering'
+    type: 'bullets',
+    title: 'Prompt Engineering',
+    bullets: [
+      'Zero/Few-Shot examples',
+      'Role prompting'
+    ]
   },
   {
     id: 28,
-    type: 'title',
-    title: 'Chain of Thought'
+    type: 'bullets',
+    title: 'Reasoning Strategies',
+    bullets: [
+      'Chain-of-Thought (CoT)',
+      'Tree-of-Thought (ToT)'
+    ]
   },
   {
     id: 29,
-    type: 'title',
-    title: 'ReAct'
+    type: 'bullets',
+    title: 'Tool Use & Augmentation',
+    bullets: [
+      'ReAct pattern',
+      'Retrieval-Augmented Generation (RAG)',
+      'Function calling & APIs'
+    ]
   },
   {
     id: 30,
     type: 'title',
-    title: 'Function Calling'
-  },
-  {
-    id: 31,
-    type: 'title',
     title: 'Now these are being baked into the model'
   },
   {
-    id: 32,
+    id: 31,
     type: 'content',
     title: 'What do we have?',
     subtitle: 'A tool that understands human language'
   },
   {
-    id: 33,
+    id: 32,
     type: 'content',
     title: 'Looks Like Magic ✨',
     subtitle: 'Underneath it predicts tokens'
   },
   {
-    id: 34,
+    id: 33,
     type: 'content',
     title: 'Reasoning & Tools',
     subtitle: 'Add superpowers to the model'
   },
   {
-    id: 35,
+    id: 34,
     type: 'content',
     title: 'Still a Black Box',
     subtitle: 'Interpretable AI tries to explain it'
   },
   {
-    id: 36,
+    id: 35,
     type: 'content',
     title: 'Hope this made things clearer',
     subtitle: "But it's fine if you don't care"
   },
   {
-    id: 37,
+    id: 36,
     type: 'content',
-    title: "I don't really know how electricity works ⚡",
+    title: "I don't really know how electricity works ⚡️",
     subtitle: 'And I use it every day'
   },
   {
-    id: 38,
+    id: 37,
     type: 'final',
     title: 'Thank you!',
     subtitle: 'Questions?',
