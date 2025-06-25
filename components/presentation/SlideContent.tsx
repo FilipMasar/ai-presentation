@@ -13,7 +13,8 @@ import {
   HowDidWeGetHereSlide,
   PerceptronSlide,
   NeuralNetworkSlide,
-  TransformerSlide
+  TransformerSlide,
+  FinalSlide
 } from './slides/';
 
 interface SlideContentProps {
@@ -63,6 +64,9 @@ export function SlideContent({ slide, isActive }: SlideContentProps) {
     
     case 'transformer':
       return <TransformerSlide slide={slide} />;
+
+    case 'final':
+      return <FinalSlide slide={slide} />;
     
     default:
       console.warn('Unknown slide type:', slide.type);

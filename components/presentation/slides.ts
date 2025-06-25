@@ -1,6 +1,6 @@
 export interface Slide {
   id: number;
-  type: 'title' | 'content' | 'timeline' | 'emoji' | 'bullets' | 'diagram' | 'quote' | 'visual' | 'how-did-we-get-here' | 'perceptron' | 'neural-network' | 'transformer';
+  type: 'title' | 'content' | 'timeline' | 'emoji' | 'bullets' | 'diagram' | 'quote' | 'visual' | 'how-did-we-get-here' | 'perceptron' | 'neural-network' | 'transformer' | 'final';
   title?: string;
   subtitle?: string;
   content?: string;
@@ -253,37 +253,39 @@ export const slides: Slide[] = [
   {
     id: 32,
     type: 'content',
-    title: 'Conclusion',
-    subtitle: 'It\'s a black box - even to people who work with it'
+    title: 'Looks Like Magic ✨',
+    subtitle: 'Underneath it predicts tokens'
   },
   {
     id: 33,
-    type: 'title',
-    title: 'Interpretable AI'
+    type: 'content',
+    title: 'Reasoning & Tools',
+    subtitle: 'Add superpowers to the model'
   },
   {
     id: 34,
     type: 'content',
-    title: 'But on a higher level',
-    subtitle: 'It doesn\'t have to be'
+    title: 'Still a Black Box',
+    subtitle: 'Interpretable AI tries to explain it'
   },
   {
     id: 35,
     type: 'content',
-    title: 'You know it\'s a token generator',
-    subtitle: '+ all the tools'
+    title: 'Hope this made things clearer',
+    subtitle: "But it's fine if you don't care"
   },
   {
     id: 36,
     type: 'content',
-    title: 'If you don\'t care how it works',
-    subtitle: 'That\'s OK'
+    title: "I don't really know how electricity works ⚡️",
+    subtitle: 'And I use it every day'
   },
   {
     id: 37,
-    type: 'content',
-    title: 'I don\'t really know how electricity works',
-    subtitle: 'And I use it every day'
+    type: 'final',
+    title: 'Thank you!',
+    subtitle: 'Questions?',
+    emoji: '🙏'
   }
 ];
 
