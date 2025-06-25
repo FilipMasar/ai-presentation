@@ -1,6 +1,6 @@
 export interface Slide {
   id: number;
-  type: 'title' | 'content' | 'timeline' | 'emoji' | 'bullets' | 'diagram' | 'quote' | 'visual' | 'how-did-we-get-here' | 'perceptron' | 'neural-network' | 'transformer' | 'final';
+  type: 'title' | 'content' | 'timeline' | 'emoji' | 'bullets' | 'diagram' | 'quote' | 'visual' | 'video' | 'how-did-we-get-here' | 'perceptron' | 'neural-network' | 'transformer' | 'final';
   title?: string;
   subtitle?: string;
   content?: string;
@@ -12,6 +12,8 @@ export interface Slide {
   quote?: string;
   author?: string;
   visual?: string;
+  videoUrl?: string;
+  qrUrl?: string;
   diagram?: {
     type: 'hierarchy' | 'flow' | 'nested' | 'concentric';
     items: Array<{
@@ -282,6 +284,13 @@ export const slides: Slide[] = [
   },
   {
     id: 37,
+    type: 'video',
+    title: 'Watch this demo',
+    videoUrl: 'https://www.youtube.com/embed/7xTGNNLPyMI?si=bLdR6gD8M-xc49_a',
+    qrUrl: 'https://youtu.be/7xTGNNLPyMI?si=bLdR6gD8M-xc49_a'
+  },
+  {
+    id: 38,
     type: 'final',
     title: 'Thank you!',
     subtitle: 'Questions?',
