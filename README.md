@@ -1,5 +1,7 @@
 # AI Presentation App
 
+Build by [Macaly](macaly.com) fine-tuned in Cursor.
+
 A stunning presentation web app inspired by Apple's keynote presentations, Linear's minimalist design, and Stripe's modern gradients. Built with Next.js, Tailwind CSS, and Framer Motion.
 
 ## Features
@@ -21,17 +23,7 @@ A stunning presentation web app inspired by Apple's keynote presentations, Linea
 ### ⌨️ Controls
 - **Arrow Keys**: Navigate between slides (← →)
 - **Spacebar**: Next slide
-- **Escape**: Stop auto-play
-- **Play/Pause Button**: Toggle auto-presentation mode
 - **Navigation Buttons**: Click controls in sidebar
-
-### 🎯 Timeline Feature
-The timeline spans slides 3-7, showing AI evolution from 1950 to 2024:
-- Turing Test (1950)
-- Deep Blue vs Kasparov (1997)  
-- Deep Learning Revolution (2012)
-- ChatGPT Launch (2022)
-- Multimodal AI Era (2024)
 
 ## Tech Stack
 - **Next.js 15** - React framework

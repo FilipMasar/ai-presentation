@@ -230,40 +230,10 @@ export const slides: Slide[] = [
     id: 26,
     type: 'content',
     title: 'Output?',
-    subtitle: 'Token prediction model - LLM'
+    subtitle: 'Token prediction model - base model'
   },
   {
     id: 27,
-    type: 'bullets',
-    title: 'Pretraining',
-    bullets: [
-      'Massive web-scale corpus',
-      'Self-supervised next-token prediction',
-      'Base model emerges'
-    ]
-  },
-  {
-    id: 28,
-    type: 'bullets',
-    title: 'Supervised Fine Tuning',
-    bullets: [
-      'Curated question/answer pairs',
-      'Model learns to follow instructions',
-      'Produces an SFT model'
-    ]
-  },
-  {
-    id: 29,
-    type: 'bullets',
-    title: 'RLHF',
-    bullets: [
-      'Humans rank model outputs',
-      'Train reward model on preferences',
-      'Optimize with reinforcement learning'
-    ]
-  },
-  {
-    id: 30,
     type: 'pipeline',
     title: 'Training Pipeline',
     pipeline: [
@@ -274,18 +244,23 @@ export const slides: Slide[] = [
     ]
   },
   {
-    id: 31,
-    type: 'content',
-    title: 'Obviously this can\'t be everything to chatGPT',
-    subtitle: 'Back to timeline...'
+    id: 28,
+    type: 'image',
+    title: 'Textbook analogy',
+    image: '/textbook.jpeg'
   },
   {
-    id: 32,
+    id: 29,
+    type: 'content',
+    title: 'This can\'t be everything to ChatGPT, right?',
+  },
+  {
+    id: 30,
     type: 'title',
     title: 'GPT-2'
   },
   {
-    id: 33,
+    id: 31,
     type: 'bullets',
     title: 'Prompt Engineering',
     bullets: [
@@ -294,7 +269,7 @@ export const slides: Slide[] = [
     ]
   },
   {
-    id: 34,
+    id: 32,
     type: 'bullets',
     title: 'Reasoning Strategies',
     bullets: [
@@ -303,7 +278,7 @@ export const slides: Slide[] = [
     ]
   },
   {
-    id: 35,
+    id: 33,
     type: 'bullets',
     title: 'Tool Use & Augmentation',
     bullets: [
@@ -313,48 +288,49 @@ export const slides: Slide[] = [
     ]
   },
   {
-    id: 36,
+    id: 34,
     type: 'title',
-    title: 'Now these are being baked into the model'
+    title: 'Now these are being baked into the model',
+    subtitle: 'or abstracted away by applications like ChatGPT'
   },
   {
-    id: 37,
+    id: 35,
     type: 'content',
     title: 'What do we have?',
     subtitle: 'A tool that understands human language'
   },
   {
-    id: 38,
+    id: 36,
     type: 'content',
     title: 'Looks Like Magic ✨',
     subtitle: 'Underneath it predicts tokens'
   },
   {
-    id: 39,
+    id: 37,
     type: 'content',
     title: 'Reasoning & Tools',
     subtitle: 'Add superpowers to the model'
   },
   {
-    id: 40,
+    id: 38,
     type: 'content',
     title: 'Still a Black Box',
     subtitle: 'Interpretable AI tries to explain it'
   },
   {
-    id: 41,
+    id: 39,
     type: 'content',
     title: 'Hope this made things clearer',
     subtitle: "But it's fine if you don't care"
   },
   {
-    id: 42,
+    id: 40,
     type: 'content',
     title: "I don't really know how electricity works ⚡️",
     subtitle: 'And I use it every day'
   },
   {
-    id: 43,
+    id: 41,
     type: 'video',
     videoUrls: [
       {
@@ -371,7 +347,7 @@ export const slides: Slide[] = [
     ]
   },
   {
-    id: 44,
+    id: 42,
     type: 'final',
     title: 'Thank you!',
     subtitle: 'Questions?',

@@ -11,7 +11,7 @@ interface PipelineSlideProps {
 export function PipelineSlide({ slide }: PipelineSlideProps) {
   return (
     <SlideWrapper slideId={slide.id}>
-      <div className="space-y-12 flex flex-col items-center">
+      <div className="space-y-12 flex flex-col items-center w-full">
         {slide.title && (
           <motion.h2
             variants={textVariants}
@@ -22,10 +22,10 @@ export function PipelineSlide({ slide }: PipelineSlideProps) {
         )}
         <motion.div
           variants={textVariants}
-          className="flex items-center justify-center flex-wrap gap-8"
+          className="flex items-center justify-center w-full px-8"
         >
           {slide.pipeline?.map((step, index) => (
-            <div key={index} className="flex items-center gap-8">
+            <div key={index} className="flex items-center shrink-0">
               <motion.div
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
@@ -42,7 +42,7 @@ export function PipelineSlide({ slide }: PipelineSlideProps) {
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ delay: 0.3 + index * 0.1 }}
-                  className="text-4xl text-slate-300"
+                  className="text-4xl text-slate-300 px-4"
                 >
                   →
                 </motion.div>
