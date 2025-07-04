@@ -16,6 +16,7 @@ import {
   PerceptronSlide,
   NeuralNetworkSlide,
   TransformerSlide,
+  ImageSlide,
   FinalSlide
 } from './slides/';
 
@@ -72,6 +73,9 @@ export function SlideContent({ slide, isActive }: SlideContentProps) {
     
     case 'transformer':
       return <TransformerSlide slide={slide} />;
+
+    case 'image':
+      return <ImageSlide slide={slide} />;
 
     case 'final':
       return <FinalSlide slide={slide} />;

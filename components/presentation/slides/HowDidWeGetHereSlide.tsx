@@ -12,15 +12,6 @@ export function HowDidWeGetHereSlide({ slide }: HowDidWeGetHereSlideProps) {
   return (
     <SlideWrapper slideId={slide.id}>
       <div className="space-y-12 flex items-center justify-center flex-col">
-        {slide.title && (
-          <motion.h2 
-            variants={textVariants}
-            className="text-6xl font-bold gradient-text mb-16 text-center"
-          >
-            {slide.title}
-          </motion.h2>
-        )}
-        
         <motion.div variants={textVariants}>
           <NestedBottomDiagram />
         </motion.div>

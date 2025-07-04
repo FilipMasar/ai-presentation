@@ -15,6 +15,7 @@ export interface Slide {
     | 'perceptron'
     | 'neural-network'
     | 'transformer'
+    | 'image'
     | 'final';
   title?: string;
   subtitle?: string;
@@ -27,6 +28,7 @@ export interface Slide {
   quote?: string;
   author?: string;
   visual?: string;
+  image?: string;
   videoUrls?: Array<{ url: string; title?: string }>;
   qrUrls?: string[];
   diagram?: {
@@ -174,38 +176,47 @@ export const slides: Slide[] = [
   {
     id: 18,
     type: 'content',
-    title: 'This is the model',
-    subtitle: 'This is the brain of AI'
+    title: 'Sentiment Analysis',
+    subtitle: 'Is this review positive or negative?'
   },
   {
     id: 19,
-    type: 'bullets',
-    title: 'Deep Learning',
-    bullets: [
-      'Reviews → 0, 1 (sentiment)',
-      'Image → cat or dog',
-      'Text → predict next word'
-    ]
+    type: 'content',
+    title: 'Image Classification',
+    subtitle: 'Is it a cat or a dog?'
   },
   {
     id: 20,
+    type: 'content',
+    title: 'Next Word Prediction',
+    subtitle: 'Predict the next word'
+  },
+  {
+    id: 21,
+    type: 'content',
+    title: 'Neural Network Model',
+    subtitle: 'This is the brain of AI 🧠'
+  },
+  {
+    id: 22,
+    type: 'image',
+    title: 'Deep Learning',
+    subtitle: 'Neural Networks with many layers',
+    image: '/deeplearning.webp'
+  },
+  {
+    id: 23,
     type: 'transformer',
     title: '2017: Transformers',
     subtitle: '"Attention is All You Need"'
   },
   {
-    id: 21,
-    type: 'content',
-    title: 'Evolution',
-    subtitle: 'Perceptron → Neural Networks → Transformers'
-  },
-  {
-    id: 22,
+    id: 24,
     type: 'title',
     title: 'Generative AI'
   },
   {
-    id: 23,
+    id: 25,
     type: 'bullets',
     title: 'The Recipe',
     bullets: [
@@ -216,13 +227,13 @@ export const slides: Slide[] = [
     ]
   },
   {
-    id: 24,
+    id: 26,
     type: 'content',
     title: 'Output?',
     subtitle: 'Token prediction model - LLM'
   },
   {
-    id: 25,
+    id: 27,
     type: 'bullets',
     title: 'Pretraining',
     bullets: [
@@ -232,7 +243,7 @@ export const slides: Slide[] = [
     ]
   },
   {
-    id: 26,
+    id: 28,
     type: 'bullets',
     title: 'Supervised Fine Tuning',
     bullets: [
@@ -242,7 +253,7 @@ export const slides: Slide[] = [
     ]
   },
   {
-    id: 27,
+    id: 29,
     type: 'bullets',
     title: 'RLHF',
     bullets: [
@@ -252,7 +263,7 @@ export const slides: Slide[] = [
     ]
   },
   {
-    id: 28,
+    id: 30,
     type: 'pipeline',
     title: 'Training Pipeline',
     pipeline: [
@@ -263,18 +274,18 @@ export const slides: Slide[] = [
     ]
   },
   {
-    id: 29,
+    id: 31,
     type: 'content',
     title: 'Obviously this can\'t be everything to chatGPT',
     subtitle: 'Back to timeline...'
   },
   {
-    id: 30,
+    id: 32,
     type: 'title',
     title: 'GPT-2'
   },
   {
-    id: 31,
+    id: 33,
     type: 'bullets',
     title: 'Prompt Engineering',
     bullets: [
@@ -283,7 +294,7 @@ export const slides: Slide[] = [
     ]
   },
   {
-    id: 32,
+    id: 34,
     type: 'bullets',
     title: 'Reasoning Strategies',
     bullets: [
@@ -292,7 +303,7 @@ export const slides: Slide[] = [
     ]
   },
   {
-    id: 33,
+    id: 35,
     type: 'bullets',
     title: 'Tool Use & Augmentation',
     bullets: [
@@ -302,48 +313,48 @@ export const slides: Slide[] = [
     ]
   },
   {
-    id: 34,
+    id: 36,
     type: 'title',
     title: 'Now these are being baked into the model'
   },
   {
-    id: 35,
+    id: 37,
     type: 'content',
     title: 'What do we have?',
     subtitle: 'A tool that understands human language'
   },
   {
-    id: 36,
+    id: 38,
     type: 'content',
     title: 'Looks Like Magic ✨',
     subtitle: 'Underneath it predicts tokens'
   },
   {
-    id: 37,
+    id: 39,
     type: 'content',
     title: 'Reasoning & Tools',
     subtitle: 'Add superpowers to the model'
   },
   {
-    id: 38,
+    id: 40,
     type: 'content',
     title: 'Still a Black Box',
     subtitle: 'Interpretable AI tries to explain it'
   },
   {
-    id: 39,
+    id: 41,
     type: 'content',
     title: 'Hope this made things clearer',
     subtitle: "But it's fine if you don't care"
   },
   {
-    id: 40,
+    id: 42,
     type: 'content',
     title: "I don't really know how electricity works ⚡️",
     subtitle: 'And I use it every day'
   },
   {
-    id: 41,
+    id: 43,
     type: 'video',
     videoUrls: [
       {
@@ -360,7 +371,7 @@ export const slides: Slide[] = [
     ]
   },
   {
-    id: 42,
+    id: 44,
     type: 'final',
     title: 'Thank you!',
     subtitle: 'Questions?',
