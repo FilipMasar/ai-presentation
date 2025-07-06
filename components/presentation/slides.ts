@@ -240,7 +240,7 @@ export const slides: Slide[] = [
       { label: 'Pretraining', emoji: '📚' },
       { label: 'SFT', emoji: '🛠️' },
       { label: 'RLHF', emoji: '👍' },
-      { label: 'ChatGPT', emoji: '🤖' }
+      { label: '"ChatGPT"', emoji: '🤖' }
     ]
   },
   {
@@ -257,7 +257,8 @@ export const slides: Slide[] = [
   {
     id: 30,
     type: 'title',
-    title: 'GPT-2'
+    title: 'GPT-3',
+    subtitle: 'InstructGPT, 2022'
   },
   {
     id: 31,
@@ -314,8 +315,8 @@ export const slides: Slide[] = [
   {
     id: 38,
     type: 'content',
-    title: 'Still a Black Box',
-    subtitle: 'Interpretable AI tries to explain it'
+    title: 'AI is still a Black Box',
+    subtitle: 'Interpretable AI'
   },
   {
     id: 39,
