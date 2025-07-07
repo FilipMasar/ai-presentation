@@ -1,6 +1,6 @@
 # 🤖 AI Presentation App
 
-Built in [Macaly](macaly.com), fine-tuned in Cursor.
+Made in [Macaly](macaly.com), fine-tuned in Cursor.
 
 A stunning educational presentation web app that explains **"What is AI and How Do Tools Like ChatGPT Work?"** Built with modern web technologies and inspired by Apple's keynote presentations, Linear's minimalist design, and Stripe's modern gradients.
 
