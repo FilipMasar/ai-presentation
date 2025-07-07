@@ -1,7 +1,19 @@
 {
-  "name": "src",
-  "version": "0.1.0",
-  "private": true,
+  "name": "ai-presentation",
+  "version": "1.0.0",
+  "private": false,
+  "description": "A stunning presentation web app about AI/ML concepts, built with Next.js and inspired by Apple's keynote presentations",
+  "keywords": ["ai", "presentation", "nextjs", "react", "typescript", "machine-learning", "educational"],
+  "author": "Filip Masar",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FilipMasar/ai-presentation.git"
+  },
+  "homepage": "https://github.com/FilipMasar/ai-presentation#readme",
+  "bugs": {
+    "url": "https://github.com/FilipMasar/ai-presentation/issues"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",

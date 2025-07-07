@@ -12,12 +12,13 @@ const nextConfig = {
   },
   images: { unoptimized: true },
   devIndicators: false,
-  allowedDevOrigins: [
-    "*.macaly.dev",
-    "*.macaly.app",
-    "*.macaly-app.com",
-    "*.macaly-user-data.dev",
-  ],
+  // Remove or update these domains as needed for your deployment
+  // allowedDevOrigins: [
+  //   "*.macaly.dev",
+  //   "*.macaly.app", 
+  //   "*.macaly-app.com",
+  //   "*.macaly-user-data.dev",
+  // ],
 };
 
 module.exports = nextConfig;
