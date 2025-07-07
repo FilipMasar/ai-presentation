@@ -5,7 +5,7 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "AI Fundamentals: Understanding How ChatGPT Works",
+  title: "What is AI? How ChatGPT Works?",
   description: "An interactive presentation exploring AI fundamentals, machine learning, neural networks, and how modern AI tools like ChatGPT actually work. From the Turing Test to Transformers.",
   keywords: [
     "AI",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://ai-presentation-your-domain.vercel.app'), // Update with your actual domain
+  metadataBase: new URL('https://ai-presentation-sigma.vercel.app'),
   alternates: {
     canonical: '/',
   },
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: '/',
-    title: 'AI Fundamentals: Understanding How ChatGPT Works',
+    title: 'What is AI? How ChatGPT Works?',
     description: 'An interactive presentation exploring AI fundamentals, machine learning, neural networks, and how modern AI tools like ChatGPT actually work. From the Turing Test to Transformers.',
     siteName: 'AI Fundamentals Presentation',
     images: [
@@ -56,10 +56,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'AI Fundamentals: Understanding How ChatGPT Works',
+    title: 'What is AI? How ChatGPT Works?',
     description: 'An interactive presentation exploring AI fundamentals, machine learning, neural networks, and how modern AI tools like ChatGPT actually work.',
     images: ['/nn.jpeg'],
-    creator: '@your-twitter-handle', // Update with your actual Twitter handle
+    creator: '@filipmasar1',
   },
   robots: {
     index: true,
