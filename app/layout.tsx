@@ -41,24 +41,18 @@ export const metadata: Metadata = {
     siteName: 'AI Fundamentals Presentation',
     images: [
       {
-        url: '/nn.jpeg',
+        url: '/preview.png',
         width: 1200,
         height: 630,
-        alt: 'AI Fundamentals Presentation - Neural Networks and Machine Learning',
-      },
-      {
-        url: '/transformer.webp',
-        width: 1200,
-        height: 630,
-        alt: 'Transformer Architecture Explained',
-      },
+        alt: 'What is AI? How ChatGPT Works?',
+      }
     ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'What is AI? How ChatGPT Works?',
     description: 'An interactive presentation exploring AI fundamentals, machine learning, neural networks, and how modern AI tools like ChatGPT actually work.',
-    images: ['/nn.jpeg'],
+    images: ['/preview.png'],
     creator: '@filipmasar1',
   },
   robots: {
@@ -73,12 +67,7 @@ export const metadata: Metadata = {
       'max-image-preview': 'large',
       'max-snippet': -1,
     },
-  },
-  verification: {
-    // Add your verification tokens here if needed
-    // google: 'your-google-verification-token',
-    // yandex: 'your-yandex-verification-token',
-  },
+  }
 };
 
 export default function RootLayout({
