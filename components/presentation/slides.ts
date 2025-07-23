@@ -94,7 +94,7 @@ export const slides: Slide[] = [
     id: 8,
     type: 'timeline',
     title: 'AI Timeline',
-    timelineYear: '2000s-Present',
+    timelineYear: '2000s',
     timelineEvent: 'Machine Learning & Big Data'
   },
   {
@@ -309,7 +309,7 @@ export const slides: Slide[] = [
       'Images: DALL-E, Midjourney, Stable Diffusion',
       'Audio: Whisper, ElevenLabs, Suno',
       'Video: Sora, Veo 3, Pika',
-      'Multimodal: GPT-4V, Claude 3, Gemini Pro'
+      'Multimodal: GPT-4o, Claude 4, Gemini 2.5'
     ]
   },
   {
