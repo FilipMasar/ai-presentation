@@ -285,7 +285,7 @@ export const slides: Slide[] = [
     bullets: [
       'ReAct pattern',
       'Retrieval-Augmented Generation (RAG)',
-      'Function calling & APIs'
+      'Structured Outputs & Function calling'
     ]
   },
   {
@@ -302,36 +302,56 @@ export const slides: Slide[] = [
   },
   {
     id: 36,
+    type: 'bullets',
+    title: 'Beyond Text: Other Modalities',
+    subtitle: 'AI can now see, hear, and create',
+    bullets: [
+      'Images: DALL-E, Midjourney, Stable Diffusion',
+      'Audio: Whisper, ElevenLabs, Suno',
+      'Video: Sora, Veo 3, Pika',
+      'Multimodal: GPT-4V, Claude 3, Gemini Pro'
+    ]
+  },
+  {
+    id: 37,
+    type: 'image',
+    title: 'AlphaFold: Solving Biology',
+    subtitle: 'CASP14: From decades of work to minutes of prediction',
+    image: '/casp.webp'
+  },
+  {
+    id: 38,
+    type: 'image',
+    title: 'From Sequence to Structure',
+    subtitle: '200M+ proteins predicted • Drug discovery accelerated',
+    image: '/alphafold.gif'
+  },
+  {
+    id: 39,
     type: 'content',
     title: 'Looks Like Magic ✨',
     subtitle: 'Underneath it predicts tokens'
   },
   {
-    id: 37,
+    id: 40,
     type: 'content',
     title: 'Reasoning & Tools',
     subtitle: 'Add superpowers to the model'
   },
   {
-    id: 38,
-    type: 'content',
-    title: 'AI is still a Black Box',
-    subtitle: 'Interpretable AI'
-  },
-  {
-    id: 39,
+    id: 41,
     type: 'content',
     title: 'Hope this made things clearer',
     subtitle: "But it's fine if you don't care"
   },
   {
-    id: 40,
+    id: 42,
     type: 'content',
     title: "I don't really know how electricity works ⚡️",
     subtitle: 'And I use it every day'
   },
   {
-    id: 41,
+    id: 43,
     type: 'video',
     videoUrls: [
       {
@@ -348,7 +368,7 @@ export const slides: Slide[] = [
     ]
   },
   {
-    id: 42,
+    id: 44,
     type: 'final',
     title: 'Thank you!',
     subtitle: 'Questions?',
