@@ -372,7 +372,10 @@ export const slides: Slide[] = [
     type: 'final',
     title: 'Thank you!',
     subtitle: 'Questions?',
-    emoji: '🙏'
+    emoji: '🙏',
+    qrUrls: [
+      'https://open-poll-beta.vercel.app/poll/E74S2H'
+    ]
   }
 ];
 
