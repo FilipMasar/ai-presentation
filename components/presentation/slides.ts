@@ -283,7 +283,7 @@ export const slides: Slide[] = [
     type: 'bullets',
     title: 'Tool Use & Augmentation',
     bullets: [
-      'ReAct pattern',
+      'ReAct framework',
       'Retrieval-Augmented Generation (RAG)',
       'Structured Outputs & Function calling'
     ]
